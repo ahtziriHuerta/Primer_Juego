@@ -13,10 +13,10 @@ El jugador debe moverse y evitar los mobs mientras aumenta su puntuación.
 ## 🎥 Gameplay
 
 ### Animación 1
-![Gameplay 1](art/video/gift2.gif)
+<img src="art/gift2.gif" width="300">
+![Gameplay 1](art/gift2.gif)
 
-### Animación 2
-![Gameplay 2](art/gift2/gameplay2.gif)
+
 
 ---
 
