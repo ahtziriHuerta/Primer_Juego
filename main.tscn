@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://wbl8wcejssxy"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_0r6n5"]
+[ext_resource type="PackedScene" uid="uid://cao351pllxqpa" path="res://mob.tscn" id="2_50pww"]
+[ext_resource type="PackedScene" uid="uid://bwhlkliwp13p4" path="res://player.tscn" id="3_veqnc"]
+[ext_resource type="PackedScene" uid="uid://ppjxvmm1dvip" path="res://hud.tscn" id="4_0qnje"]
+[ext_resource type="AudioStream" uid="uid://sgfduhhw4pno" path="res://art/House In a Forest Loop.ogg" id="5_55d8h"]
+[ext_resource type="Texture2D" uid="uid://blwm36a86sei0" path="res://art/Diseño sin título.png" id="5_yfhk7"]
+[ext_resource type="AudioStream" uid="uid://td2mgko63p61" path="res://art/gameover.wav" id="6_hp1r0"]
+[ext_resource type="Texture2D" uid="uid://c504ud3bibe1d" path="res://art/sky bridge.png" id="8_yok2s"]
+
+[sub_resource type="Curve2D" id="1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 480, 0, 0, 0, 0, 0, 484, 703, 0, 0, 0, 0, 481, 728, 0, 0, 0, 0, -2, 729, 0, 0, 0, 0, 0, 0)
+}
+point_count = 6
+
+[node name="Main" type="Node"]
+script = ExtResource("1_0r6n5")
+mob_scene = ExtResource("2_50pww")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.145098, 0.4, 0.247059, 1)
+
+[node name="Player" parent="." instance=ExtResource("3_veqnc")]
+scale = Vector2(1.00732, 0.996106)
+
+[node name="MobTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(240, 450)
+
+[node name="MobPath" type="Path2D" parent="."]
+curve = SubResource("1")
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
+
+[node name="HUD" parent="." instance=ExtResource("4_0qnje")]
+process_mode = 3
+heart_texture = ExtResource("5_yfhk7")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_55d8h")
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_hp1r0")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 436.0
+offset_bottom = 688.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_yok2s")
+expand_mode = 1
+stretch_mode = 6
+
+[connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]
+[connection signal="start_game" from="HUD" to="." method="new_game"]

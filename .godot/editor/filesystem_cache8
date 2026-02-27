@@ -1,0 +1,46 @@
+2a60927148abd1d33b818b535e306557
+::res://::1772221165
+hud.gd::GDScript::-1::1772039843::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::1084386969184211499::1772221165::0::1::::<><>::res://hud.gd<>uid://bgv586r20ps8e<>uid://blwm36a86sei0
+main.gd::GDScript::-1::1772039843::0::1::::<>Node<>::
+main.tscn::PackedScene::1546946914707874702::1772221165::0::1::::<><>::res://main.gd<>uid://cao351pllxqpa<>uid://bwhlkliwp13p4<>uid://ppjxvmm1dvip<>uid://sgfduhhw4pno<>uid://blwm36a86sei0<>uid://td2mgko63p61<>uid://by5s1hkjl6ngi
+mob.gd::GDScript::-1::1772039843::0::1::::<>RigidBody2D<>::
+mob.tscn::PackedScene::4803497694852229190::1772221165::0::1::::<><>::res://mob.gd<>uid://tirgigj7ximb<>uid://cwte3ouopamsh<>uid://bslhrk3ft0ri6
+player.gd::GDScript::-1::1771987414::0::1::::<>Area2D<>::
+player.tscn::PackedScene::3945712224003678091::1772221165::0::1::::<><>::res://player.gd<>uid://cj0iixeof6snl<>uid://y2kd12s654ox<>uid://dcq0a60pcyo31<>uid://gro7b7jxuivl<>uid://lluyi53cblhn
+README.md::TextFile::-1::1771695109::0::1::::<><>::
+::res://art/::1772221547
+1.png::CompressedTexture2D::4134023983675342544::1771962544::1771962544::1::::<><>::
+2.png::CompressedTexture2D::3808648482608970513::1771962554::1771962554::1::::<><>::
+3.png::CompressedTexture2D::6692618671166753990::1771962560::1771962560::1::::<><>::
+Copia de Left - Attacking 2.png::CompressedTexture2D::1351146384703775633::1756441395::1772220374::1::::<><>::
+Copia de Left - Attacking.png::CompressedTexture2D::1601021610030562724::1759196404::1772220008::1::::<><>::
+Copia de Left - Running.png::CompressedTexture2D::4403420536034495412::1759196386::1772220009::1::::<><>::
+Copia de Right - Running 2.png::CompressedTexture2D::6356512741829599051::1756441208::1772220316::1::::<><>::
+Copia de Right - Running.png::CompressedTexture2D::5269775878913914805::1759196285::1772220009::1::::<><>::
+corazon.png::CompressedTexture2D::217772901046820597::1771986616::1772044036::1::::<><>::
+Diseño sin título.png::CompressedTexture2D::3204694510208669273::1771986853::1772044039::1::::<><>::
+Dying.png::CompressedTexture2D::4947012426850856643::1759196508::1772220008::1::::<><>::
+Enemy3-AttackSmashStart.png::CompressedTexture2D::6038251676818477723::1771957100::1771957100::1::::<><>::
+Enemy3-Die.png::CompressedTexture2D::7630421951218052840::1771957096::1771957096::1::::<><>::
+Enemy3-SmashEnd.png::CompressedTexture2D::4658482023448764985::1771956416::1771956421::1::::<><>::
+Front - Attacking.png::CompressedTexture2D::2402093614785033644::1756449527::1772220007::1::::<><>::
+Front - Idle.png::CompressedTexture2D::7464792328910690628::1759196011::1772220009::1::::<><>::
+Front - Running.png::CompressedTexture2D::3631409918721729134::1759196067::1772220009::1::::<><>::
+gameover.wav::AudioStreamWAV::1341442281983134212::1771695109::1771695129::1::::<><>::
+House In a Forest Loop.ogg::AudioStreamOggVorbis::1276095455983727340::1771695109::1771695129::1::::<><>::
+Left - Attacking.png::CompressedTexture2D::231599919375510100::1756372612::1772220007::1::::<><>::
+Left - Running.png::CompressedTexture2D::3672983970659685131::1756441376::1772220007::1::::<><>::
+Mushroom-Attack.png::CompressedTexture2D::1740884382159070663::1771959247::1771959247::1::::<><>::
+Mushroom-Die.png::CompressedTexture2D::457134769348439717::1771959178::1771959142::1::::<><>::
+Mushroom-Hit.png::CompressedTexture2D::796043102027910991::1771959192::1771959192::1::::<><>::
+Mushroom-Idle.png::CompressedTexture2D::7334189374768615306::1771959205::1771958910::1::::<><>::
+Mushroom-Run.png::CompressedTexture2D::5456651641133647125::1771959211::1771957123::1::::<><>::
+Mushroom-Stun.png::CompressedTexture2D::4429997562413268628::1771959199::1771959199::1::::<><>::
+Right - Idle Blinking.png::CompressedTexture2D::6420314421888077173::1756449582::1772220007::1::::<><>::
+Right - Running.png::CompressedTexture2D::3964503999571844676::1756372517::1772220007::1::::<><>::
+sky bridge.png::CompressedTexture2D::6931912829927738415::1680549428::1772221555::1::::<><>::
+::res://fonts/::1771695129
+FONTLOG.txt::TextFile::-1::1771695109::0::1::::<><>::
+LICENSE.txt::TextFile::-1::1771695109::0::1::::<><>::
+Xolonium-Regular.ttf::FontFile::2852787775084712022::1771695109::1771695129::1::::<><>::
